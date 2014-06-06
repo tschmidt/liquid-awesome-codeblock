@@ -60,8 +60,8 @@ any of the code formats that CodeRay supports.
       code goes here
     {% endawesome_codeblock %}
 
-You can choose to add line numbers as well. Refer to the documentation for
-CodeRay::Encoder::HTML for values that can be passed in.
+You can choose to add line numbers as well. Really, any value here will indicate that you
+want to show line numbers.
 
     {% awesome_codeblock show_line_numbers:true %}
       code goes here
