@@ -68,7 +68,8 @@ want to show line numbers.
     {% endawesome_codeblock %}
 
 You can choose to highlight specific lines within your code block as well. Just supply
-a comma separated list of line numbers.
+a comma separated list of line numbers. Setting this option will automatically set
+`show_line_numbers` to `true`.
 
     {% awesome_codeblock highlight:"2,3,4,7" %}
       code goes here
@@ -80,6 +81,19 @@ If you want your line numbers to start at a specific number, you can do that too
     {% awesome_codeblock start_at:25 %}
       code goes here
       ...
+    {% endawesome_codeblock %}
+
+You can use any combination of the above options:
+
+    {% awesome_codeblock title:"lib/awesome_codeblock.rb" lang:ruby show_line_numbers:true %}
+      code goes here
+    {% endawesome_codeblock %}
+
+If you specify `start_at` and want to highlight lines, you need to pass in the lines
+relative to your starting number:
+
+    {% awesome_codeblock start_at:25 highlight:'25, 26, 27' %}
+      code goes here
     {% endawesome_codeblock %}
 
 ## Contributing
