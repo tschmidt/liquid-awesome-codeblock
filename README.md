@@ -23,8 +23,8 @@ walk you through how to do that below.
 Add this to your gem file:
 
 ``` ruby
-gem 'liquid', '~> 2.6'
-gem 'coderay', '~> 1.1'
+gem 'liquid', '~> 2'
+gem 'coderay', '~> 1'
 ```
 
 Run `bundle install`.
