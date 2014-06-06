@@ -7,9 +7,35 @@ from Shopify.
 This plugin uses CodeRay to highlight the code. If you use something different, it's 
 fairly trivial to change it. Instructions on how to do that are shown below.
 
+## Dependencies
+
+To use this plugin the way I have written it, you will need to include a few things in
+your project:
+
+- Liquid, version ~> 2.6
+- CodeRay, version ~> 1.1
+
+I use CodeRay for the code highlighting library. You can easily substitute your own. I'll
+walk you through how to do that below.
+
 ## Installation
 
-TODO
+Add this to your gem file:
+
+``` ruby
+gem 'liquid', '~> 2.6'
+gem 'coderay', '~> 1.1'
+```
+
+Run `bundle install`.
+
+### If you're using  Jekyll
+
+Download this project and place `lib/awesome_codeblock.rb` in your `_plugins` folder.
+
+### Others?
+
+Send me a request and I'll update the README. Or, better yet, [you could contribute](#contributing)!
 
 ## Usage
 
@@ -55,3 +81,11 @@ If you want your line numbers to start at a specific number, you can do that too
       code goes here
       ...
     {% endawesome_codeblock %}
+
+## Contributing
+
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
