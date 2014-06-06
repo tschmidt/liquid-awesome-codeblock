@@ -5,7 +5,7 @@ I wrote. It allows you to add much nicer code blocks to your projects that use t
 [Liquid Templating Language](https://github.com/Shopify/liquid) from 
 [Shopify](http://www.shopify.com).
 
-This plugin uses (CodeRay)[https://github.com/rubychan/coderay] to highlight the code. 
+This plugin uses [CodeRay](https://github.com/rubychan/coderay) to highlight the code. 
 If you use something different, it's fairly trivial to change it. Instructions on how 
 to do that are shown below.
 
