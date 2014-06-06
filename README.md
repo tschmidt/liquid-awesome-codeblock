@@ -96,6 +96,13 @@ relative to your starting number:
       code goes here
     {% endawesome_codeblock %}
 
+
+## Extras
+
+There is a default theme you can use. It's based on the Github code block styles. If you
+would like to use it, look at `assets/stylesheets/awesome_codeblock_default.css`. Feel
+free to tweak at you see fit.
+
 ## Contributing
 
 1. Fork it
