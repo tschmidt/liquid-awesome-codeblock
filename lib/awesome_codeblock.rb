@@ -26,8 +26,8 @@
 #  code goes here
 #  {% endawesome_codeblock %}
 #
-# You can choose to add line numbers as well. Refer to the documentation for
-# CodeRay::Encoder::HTML for values that can be passed in.
+# You can choose to add line numbers as well. Any value that is passed to this option will
+# set show line numbers to true.
 #
 #  {% awesome_codeblock show_line_numbers:true %}
 #  code goes here
