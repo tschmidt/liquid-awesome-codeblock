@@ -55,7 +55,7 @@ describe AwesomeCodeblock do
     it "should include line numbers" do
       using_liquid_templates do
         rendered = liquid.parse(IO.read('show_line_numbers.md')).render
-        expect(rendered).to_include %q[<td class="gutter"><div class="line-number">1</div></td>]
+        expect(rendered).to_include %q[<td class="gutter line-number">1</td>]
       end
     end
   end
@@ -64,7 +64,7 @@ describe AwesomeCodeblock do
     it "should highlight the line" do
       using_liquid_templates do
         rendered = liquid.parse(IO.read('highlight_lines.md')).render
-        expect(rendered).to_include %q[<td class="gutter"><div class="line-number highlight">1</div></td>]
+        expect(rendered).to_include %q[<td class="gutter line-number highlight">1</td>]
       end
     end
   end
@@ -73,7 +73,7 @@ describe AwesomeCodeblock do
     it "should start the line count at the number given" do
       using_liquid_templates do
         rendered = liquid.parse(IO.read('starting_line_number.md')).render
-        expect(rendered).to_include %q[<td class="gutter"><div class="line-number">15</div></td>]
+        expect(rendered).to_include %q[<td class="gutter line-number">15</td>]
       end
     end
   end
